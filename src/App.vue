@@ -8,6 +8,8 @@
   <main>
     main
     <div class="wrapper">wrapper</div>
+
+    <van-button type="primary">button</van-button>
   </main>
 </template>
 

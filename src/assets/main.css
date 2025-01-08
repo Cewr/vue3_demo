@@ -1,9 +1,29 @@
 @import './base.css';
+@import './font/Fredoka.css';
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('./font/iconfont.ttf');
+}
+
+.iconfont {
+  font-family: 'iconfont';
+  font-style: normal;
+}
+
+.iconfont-menu:before {
+  content: "\f080";
+}
+
+.iconfont-search:before {
+  content: "\e6e1";
+}
 
 #app {
   min-height: 100vh;
   margin: 0;
   font-weight: normal;
+  font-family: 'Fredoka', 'Fredoka-Bold';
 }
 
 a,

@@ -1,7 +1,19 @@
 import './assets/main.css'
-import '@/common/rem'
+import '@/common/init'
+import { Lazyload } from 'vant'
 
 import { createApp } from 'vue'
+import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
+import routes from './routes.js'
 
-createApp(App).mount('#app')
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+})
+
+const app = createApp(App)
+app.use(Lazyload)
+app.use(router)
+
+app.mount('#app')
